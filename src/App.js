@@ -7,8 +7,10 @@ import Root from './components/root';
 import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom';
 
 // create router with JSX Route elements
-const appRouter = createRoutesFromElement( 
-  <Route path="/" element={<Root />}></Route>
+const appRouter = createBrowserRouter(
+  createRoutesFromElement( 
+    <Route path="/" element={<Root />}></Route>
+  )
 );
 
 function App() {
