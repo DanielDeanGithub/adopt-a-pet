@@ -8,7 +8,7 @@ import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } 
 
 // create router with JSX Route elements
 const appRouter = createBrowserRouter(
-  createRoutesFromElement( 
+  createRoutesFromElements( 
     <Route path="/" element={<Root />}></Route>
   )
 );
