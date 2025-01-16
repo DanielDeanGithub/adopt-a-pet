@@ -4,6 +4,7 @@ import Hero from '../../components/hero';
 
 // import useParams
 // import Link
+import { useParams } from 'react-router-dom';
 
 const HomePage = () => {
   const [data, setData] = useState(null);
