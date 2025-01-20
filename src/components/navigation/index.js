@@ -18,6 +18,9 @@ const Navigation = () => {
     getPetTypesData();
   }, []);
 
+  // Checks if current navigation link is active and if it is applies a darker background
+  const activeLink = ({isActive}) => isActive ? 'nav-link nav-link-active' : 'nav-link';
+
   return (
     <nav>
       <div className="nav-logo">
@@ -28,7 +31,7 @@ const Navigation = () => {
         <li key={'all'}>
           {/* These links should be NavLink component and add a special active class name if its an active link */}
           <NavLink to="/"
-            className='nav-link'
+            className={activeLink}
           >
             All Pets
           </NavLink>
@@ -39,7 +42,7 @@ const Navigation = () => {
                 {/* These links should be NavLink component and add a special active class name if its an active link */}
                 <NavLink to={`/${type._links.self.href.split('/').pop()}`}
                   key={type.name}
-                  className='nav-link'               >
+                  className={activeLink}               >
                   {type.name}s
                 </NavLink>{' '}
               </li>
