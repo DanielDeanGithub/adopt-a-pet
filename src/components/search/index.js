@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 const Search = () => {
 
   // get navigate function
-  const navigate = "REPLACE ME";
+  const navigate = useNavigate();
 
   const searchInputRef = useRef();
 
