@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 // Import createSearchParams
 // Import useNavigate
+import { useNavigate } from 'react-router-dom';
 
 const Search = () => {
 
