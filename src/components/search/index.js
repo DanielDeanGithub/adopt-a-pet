@@ -18,7 +18,7 @@ const Search = () => {
     }
 
     // use createSearchParams 
-    const query = "REPLACE ME";
+    const query = createSearchParams(searchQuery);
 
     // imperatively redirect with useNavigate() returned function
   };
