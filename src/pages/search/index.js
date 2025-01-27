@@ -10,7 +10,7 @@ const SearchPage = () => {
   // Get searchParams object from useSearchParams
   const [ searchParams ] = useSearchParams();
 
-  const petNameToFind = 'REPLACE ME';  // Get query parameter using searchParams object
+  const petNameToFind = searchParams.get('name');  // Get query parameter using searchParams object
 
   const [pets, setPets] = useState([]);
 
